@@ -5,7 +5,8 @@
     export let minute = 0;         // 0–59
     export let interactive = false;
     export let reverseDrag = false;
-  
+    export let size = 300
+
     const dispatch = createEventDispatcher();
   
     let tickAudio;
@@ -141,8 +142,8 @@
   
   <style>
     .clock-face {
-      width: 200px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
       touch-action: none; /* allow pointer events */
       user-select: none;
     }
